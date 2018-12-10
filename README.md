@@ -1,2 +1,2 @@
 # bookmyshow-seat-checker
-periodically checks if a row for a movie show in bookmyshow 
+lists all the available seats for a specific movie at a specific show time.
