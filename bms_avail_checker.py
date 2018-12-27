@@ -1,6 +1,8 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
+browser = 1
 date='20181227'
 site = 'https://in.bookmyshow.com/buytickets/kgf-hyderabad/movie-hyd-ET00061448-MT/'+date
 venue ='ADHY'
@@ -8,7 +10,14 @@ show='07:40 PM'
 # rows=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 rows=['A','B','C','D','E','F']
 numOfSeats='1'
-driver = webdriver.Firefox()
+if browser == 1:
+	driver=webdriver.Firefox()
+elif browser == 2:
+	driver=webdriver.PhantomJs()
+elif browser == 3:
+	options=Options()
+	options.set_headless(True)
+	driver=webdriver.Firefox(options=options)
 driver.get(site)
 cityelem=driver.find_element_by_link_text("Hyderabad")
 cityelem.click()
