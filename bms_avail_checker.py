@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-date='20181209'
-site = 'https://in.bookmyshow.com/buytickets/2-0-hyderabad/movie-hyd-ET00088720-MT/'+date
+date='20181227'
+site = 'https://in.bookmyshow.com/buytickets/kgf-hyderabad/movie-hyd-ET00061448-MT/'+date
 venue ='ADHY'
 show='10:45 PM'
 # rows=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
@@ -19,7 +19,7 @@ elem2.click()
 AcceptPopUp=driver.find_element_by_id("tnc")
 AcceptButton=driver.find_element_by_link_text("Accept")
 AcceptButton.click()
-SeatsPopUp=driver.find_element_by_id("qty-sel")	
+SeatsPopUp=driver.find_element_by_id("qty-sel")
 time.sleep(5)
 SeatsNumberLayoutClass=SeatsPopUp.find_element_by_class_name("__list")
 SeatsNumberLayout=SeatsNumberLayoutClass.find_element_by_id("popQty")
