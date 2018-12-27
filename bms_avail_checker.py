@@ -4,7 +4,7 @@ import time
 date='20181227'
 site = 'https://in.bookmyshow.com/buytickets/kgf-hyderabad/movie-hyd-ET00061448-MT/'+date
 venue ='ADHY'
-show='10:45 PM'
+show='07:40 PM'
 # rows=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 rows=['A','B','C','D','E','F']
 numOfSeats='1'
